@@ -1,14 +1,16 @@
-var colorChanger = document.getElementById("btn");
+//selecting DOM button element
+let colorChanger = document.getElementById("btn");
 
+//adding event listener
 colorChanger.addEventListener("click", function() {
   let cx = document.getElementById("chng");
-  let tx = document.getElementById("chng");
 
+  //toggle the text and color
   if (cx.innerHTML === "blue box") {
     cx.innerHTML = "green box";
-    tx.style.color = "green";
+    cx.style.color = "green";
   } else if (cx.innerHTML === "green box") {
     cx.innerHTML = "blue box";
-    tx.style.color = "blue";
+    cx.style.color = "blue";
   }
 });
